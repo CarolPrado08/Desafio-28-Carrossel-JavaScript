@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+
+body{
+    background-image: url(../img/bg-the-sims.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+.container{
+    max-width: 720px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+.container img{
+    width: 100%;
+   
+
+}
+
+.title{
+    text-align: center;
+    font-family: 'Vina Sans', cursive;
+    
+    font-size: 50px;
+    
+     color: #000;
+     -webkit-text-stroke: 1px #FFF;
+      text-stroke: 1px #FFF;
+}
+
+
+.the-sims-img{
+    height: 400px;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 28px;
+    /* background-color: #000; */
+    color: #000;
+    transition: 0.6s;
+}
+
+.next{
+    right: 0;
+}
+
+.prev:hover, .next:hover{
+    background-color: #827c7c;
+    transition: 0.6s;
+}
+
+.n_text{
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+}
+
+.i_text{
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.dot_box{
+    text-align: center;
+    padding: 10px;
+}
+
+.dot{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin: 0px 2px;
+    background-color: #727385;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s;
+}
+
+.active, .dot:hover{
+    background-color: #e6e6e6;
+    transition: 0.6s;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade{
+    from{ opacity: 0.4; }
+    to{ opacity: 1;}
+    
+}
+
+.container-text{
+    width: 700px;
+   margin: auto;
+}
+
+.description-text{
+    text-align: justify;
+    background-color: #FFF;
+    border-radius: 25px;
+    padding: 10px;
+    height: 250px;
+    font-size: 18px;
+
+}
